@@ -1,3 +1,3 @@
-##Course Terminal Commands of freecodecamp
+##Course Terminal Commands of freecodecamp and Flavio Copes
 
 
