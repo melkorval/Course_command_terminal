@@ -1,0 +1,46 @@
+whoami - print the user name currently logged in to the terminal session
+man - manual for understand other command -- man <command>
+
+Commands for help or exit 
+
+h H  Display this help
+q :q Q :Q ZZ  Exit
+:%s/oldword/newword/gci  Replace word vim
+
+clear - clear the terminal screen
+clear -x -- let to use scrollback -- ctrl + l
+pwd - command to know where you are 
+ls <foldername> - see all the files of a folder -- ls <foldername>
+ls -al <foldername> -- show more information about files inside folder -- ll
+cd <foldername> -- change directory
+mkdir folder1 folder2 -- create folders
+mkdir -p folder1/folder2 -- create multiple folders
+rmdir folder -- delete empty folder
+rm -rf folder -- delete folder with files
+mv -- move files or rename files
+cp <filename> <path_directory>-- copy files
+cp -r <foldername> <path_directory> -- copy folders
+open <filename> -- open files or folders (install this command)
+touch <filename> -- create files
+find <path_directory> -<parameter> <value> -- search files or folder
+find . -name "*.js" -- search in the current folder all the files extension js 
+find folder1 folder2 -name filename.extension -- search a file under multiple directories
+find <path> -type d -name <foldername> -- find directories
+find <path> -type f -name <filename> -- search only files
+find <path> -type f -size +<size_bytes> -- search a files for size
+find <path> -type f -size +<smaller_size> -size -<bigger_size> -- search files between interval of size (k for kB  and M for MB)
+find <path> -type f -size +100k -size -1M -- search files between the size 100kB and 1M
+find <path> -type d -name directory1 -or -name directory2 -- search directory 1 or directory 2
+find <path> -type f -mtime +3 -- search files edited more than 3 days ago 
+find <path> -type f -mtime -1 --search files edited in the last 24 hours
+find <path> -type f -mtime -1 -delete -- this deletes all the files edited in the last 24 hours
+ln <original> <link> -- create a hard link -- link is defined as pointer to another file
+ln -s <original> <link> -- crate a soft link
+gzip filename -- compress file, this action delete the file original
+gzip -c filename > filename.gz -- avoid delete original file when compress -- gzip -k filename
+gzip <number> filename -- levels of compress (1 - 9 worst to better compression)
+gzip filename1 filename2 -- compress multiple files
+gzip -r a_foldername -- compress all the files in a directory
+gzip -kv filename -- compression percentage information
+gzip -d filename -- decompress a file
+
