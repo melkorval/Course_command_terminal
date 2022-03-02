@@ -44,10 +44,20 @@ gzip -r a_foldername -- compress all the files in a directory
 gzip -kv filename -- compression percentage information
 gzip -d filename -- decompress a file
 alias <newcommand> = <combination_commands> -- create new command, example: alias add_commit='git add . && git push origin main'
-alias -- show all the list of alias
+alias -- show all the list of alias -- add this command to terminal permanent in .bashrc in section more alias
 cat <filename> -- see content of files
 cat <filename1> <filename2> -- see content multiple files
 cat <filename1> <filename2> > <filename3> -- concatenate the content of multiple files into a new file 
 cat <filename1> <filename2> >> <filename3> -- append the content of multiple files into a new file
 less <filename> -- show inside of a file as vim
 tail <filename> -- show the file at the end
+wc <filename> -- show more information of file, the first number is lines, the second is words and third is bytes
+wc -l <filename> -- show only number of lines
+wc -w <filename> -- show only numbers of words
+wc -c <filename> -- show only numbers of bytes
+grep <element_search> <filename> -- search a element_search or word in a files
+grep -n <element_search> <filename> -- search a element_search or word in a file and show the line numbers
+grep -nC <number> <element_search> <filename> -- show a line numbers before and line numbers after of element to search
+
+Note: operator | is use execute a command but show input other command
+less <filename> | grep -n <element_search> -- show the file but the section where is the element to search -- grep -n <element_search> <filename>
