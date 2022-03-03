@@ -61,3 +61,6 @@ grep -nC <number> <element_search> <filename> -- show a line numbers before and 
 
 Note: operator | is use execute a command but show input other command
 less <filename> | grep -n <element_search> -- show the file but the section where is the element to search -- grep -n <element_search> <filename>
+sort <filename> -- ordered a list of word vertical
+sort -r <filename> -- inverse ordered
+uniq <filename> -- report or omit repeated lines adjacent -- sort <filename> | uniq
