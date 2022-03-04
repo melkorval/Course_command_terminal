@@ -64,3 +64,4 @@ less <filename> | grep -n <element_search> -- show the file but the section wher
 sort <filename> -- ordered a list of word vertical
 sort -r <filename> -- inverse ordered
 uniq <filename> -- report or omit repeated lines adjacent -- sort <filename> | uniq
+diff <filename1> <filename2> -- compare two files with similar information
