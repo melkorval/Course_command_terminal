@@ -73,3 +73,12 @@ echo * -- see the files inside a folder
 echo <letter>* -- search a folder that start with a letter
 echo "Message_text" >> filename -- append the output to a file
 echo $(Command) -- execute a command
+chown <owner> <filename> -- change the owner to another user
+sudo chown <owner> <filename> -- we can modify a file with permission of root
+chown -R <owner> <filename> -- we can modify permission for a directory and all its files
+
+chmod <parameter> <filename> -- change the permission given to a file. parameter: a -- all, u -- user, g -- group, o -- others, r -- read, w -- write, 
+x -- execute,  + add, - remove
+
+chmod a+r <filename> -- everyone can now read
+chmod a+rw <filename> -- everyone can now read and write
