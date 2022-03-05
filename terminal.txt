@@ -65,3 +65,11 @@ sort <filename> -- ordered a list of word vertical
 sort -r <filename> -- inverse ordered
 uniq <filename> -- report or omit repeated lines adjacent -- sort <filename> | uniq
 diff <filename1> <filename2> -- compare two files with similar information
+diff -y <filename1> <filename2> -- compare for lines
+diff -u <filename1> <filename2> -- compare version as git diff
+diff -r <directory1> <directory2> -- compare directories
+echo "Message_text" -- print text in console
+echo * -- see the files inside a folder
+echo <letter>* -- search a folder that start with a letter
+echo "Message_text" >> filename -- append the output to a file
+echo $(Command) -- execute a command
