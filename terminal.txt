@@ -82,3 +82,5 @@ x -- execute,  + add, - remove
 
 chmod a+r <filename> -- everyone can now read
 chmod a+rw <filename> -- everyone can now read and write
+chmod -r <foldername> -- make a folder without read, require be root
+chmod +r <foldername> -- make a folder for read
