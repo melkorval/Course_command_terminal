@@ -121,3 +121,20 @@ du -g -- show size gigabytes
 df -- used to get disk usage information
 df -h -- show values in a human-readble format
 df <directory> -- show information of file or directory
+
+top -- show the list the processes running in real time
+
+kill -- send a variety of signals to a program
+kill <PID> -- see PID with top, for default sent the signal TERM 
+kill -HUP <PID> -- HUP means hang up, closed before terminating the process
+kill -INT <PID> -- INT means interrupt, terminates the process.
+kill -KILL <PID> -- immediately stops and terminates the process.
+kill -TERM <PID> -- TERM means terminate, kill process
+kill -CONT <PID> -- continue process
+kill -STOP <PID> -- stop process but no terminate process
+
+1 - HUP
+2 - INT
+9 - kill
+15 - TERM or STOP
+18 - CONT
