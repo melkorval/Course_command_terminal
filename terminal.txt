@@ -117,3 +117,7 @@ du - calculate the size of directory, show the size in bytes
 du * - calculate the size of each file individually
 du -m -- show size in megabytes
 du -g -- show size gigabytes
+
+df -- used to get disk usage information
+df -h -- show values in a human-readble format
+df <directory> -- show information of file or directory
