@@ -84,3 +84,36 @@ chmod a+r <filename> -- everyone can now read
 chmod a+rw <filename> -- everyone can now read and write
 chmod -r <foldername> -- make a folder without read, require be root
 chmod +r <foldername> -- make a folder for read
+
+for the parameter of chmod we can use numbers where:
+
+0 - no permission
+1 - can execute 
+2 - can write
+3 - can write, execute
+4 - can read
+5 - can read, execute
+6 - can read, write
+7 - can read, write and execute
+
+example: chmod 777 filename 
+
+umask - show permission have default and we can modify
+umask -S - show human-readble notation (u - user, g - group, o - others)
+umask <numbers> 
+
+0 - read, write and execute
+1 - read and write
+2 - read and execute
+3 - read only
+4 - write and execute
+5 - write only
+6 - execute only 
+7 - no permission
+
+umask u+rwx -- permission read, write and execute
+
+du - calculate the size of directory, show the size in bytes
+du * - calculate the size of each file individually
+du -m -- show size in megabytes
+du -g -- show size gigabytes
