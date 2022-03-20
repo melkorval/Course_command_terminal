@@ -138,3 +138,5 @@ kill -STOP <PID> -- stop process but no terminate process
 9 - kill
 15 - TERM or STOP
 18 - CONT
+
+killall <name> -- kill all process with name of program in execution (too use HUP, INT, KILL, TERM, CONT and STOP)
