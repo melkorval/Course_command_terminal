@@ -140,3 +140,26 @@ kill -STOP <PID> -- stop process but no terminate process
 18 - CONT
 
 killall <name> -- kill all process with name of program in execution (too use HUP, INT, KILL, TERM, CONT and STOP)
+
+jobs --- see all the process in background
+for run in process background use &
+Example: top & --- top is background
+
+CTRL + Z --- suspend a processes
+
+su <username>  --- logged with user in terminal
+sudo -- permission of root
+passwd --- change passoword root user
+ping <address_website> ---- send request a network host
+traceroute <address_website>  --- show route for reach to host
+history  --- show history of Commands
+
+VARIABLENAME = "value"  --- declare variable
+echo $VARIABLENAME  --- show value of the variable
+
+when we created a variable a can export to a child process with:
+export VARIABLENAME="value"  --- how to export to a script
+
+Sometimes you need to append something to a variable
+export PATH=$PATH:/new/path
+export -n VARIABLENAME  --- remove variable
