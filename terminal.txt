@@ -163,3 +163,12 @@ export VARIABLENAME="value"  --- how to export to a script
 Sometimes you need to append something to a variable
 export PATH=$PATH:/new/path
 export -n VARIABLENAME  --- remove variable
+
+contab --- we could a command perform something every, or every day, or every 2 weeks, or on weekends. info: https://crontab-generator.org/
+
+uname --- return Operating System codename (name kernel)
+uname -mp --- return the hardware name and processor architecture name
+
+env -- pass environment variables
+env  -i NAME="melkor" node app.js  ---- change value of the variable NAME in app.js
+printenv PATH --- print the values of environment variables
