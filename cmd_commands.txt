@@ -1,0 +1,8 @@
+cmd      linux terminal
+
+move     mv
+copy     cp
+del      rm
+raname   mv
+cd       cd
+
