@@ -6,6 +6,30 @@ del      rm
 raname   mv
 cd       cd
 
-cipher /e F:/namefolder   -- encrypt folder
-cipher /d F:/namefolder   --desencrypt folder
+cipher /e F:/foldername   -- encrypt folder
+cipher /d F:/foldername   --desencrypt folder
 ipconfig /all --- information network
+
+how to open usb drive in cmd (run as administrator) 
+Reference: 
+1. https://www.minitool.com/news/how-to-open-drive-in-cmd.html
+2. https://stackoverflow.com/questions/56053230/how-to-copy-a-file-from-a-usb-drive-to-c-drive-in-windows-10-using-a-batch-file?newreg=e08e32ea7f704d97bac62db98dfa50a5
+
+Run as administrator -- Windows + R and Ctrl + Shift + Enter
+
+How to List Hard Drives in cmd
+
+1. wmic logicaldisk get name or wmic logicaldisk get caption
+2. fsutil fsinfo drives
+3. list volume
+
+This case my USB have the letter E then
+1. E:
+2. dir
+
+copy files to my pc
+copy .\filename C:\Users\derva\foldername
+
+How to Use Command Prompt to Scan and Fix (External) Hard Drive in Windows 10
+chkdsk *: /f /r (replace “*” with the drive letter)
+sfc /scannow
