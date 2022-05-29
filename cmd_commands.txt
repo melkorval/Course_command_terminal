@@ -6,3 +6,6 @@ del      rm
 raname   mv
 cd       cd
 
+cipher /e F:/namefolder   -- encrypt folder
+cipher /d F:/namefolder   --desencrypt folder
+ipconfig /all --- information network
