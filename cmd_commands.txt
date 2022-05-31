@@ -31,5 +31,11 @@ copy files to my pc
 copy .\filename C:\Users\derva\foldername
 
 How to Use Command Prompt to Scan and Fix (External) Hard Drive in Windows 10
-chkdsk *: /f /r (replace “*” with the drive letter)
+chkdsk *: /f /r (replace “*” with the drive letter) -- this case chkdsk E: /f /r
 sfc /scannow
+
+Dismounted usb
+mountvol E:\ /D
+
+Descompress rar
+start WinRAR x filename path_descompress
