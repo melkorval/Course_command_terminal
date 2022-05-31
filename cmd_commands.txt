@@ -71,3 +71,14 @@ Windows 10 Education N: 2WH4N-8QGBV-H22JP-CT43Q-MDWWJ
 Windows 10 Enterprise 2015 LTSB: WNMTR-4C88C-JK8YV-HQ7T2-76DF9
 Windows 10 Enterprise 2015 LTSB N: 2F77B-TNFGY-69QQF-B8YKP-D69TJ
 
+How To Format USB/SD Card/Hard Disk Using CMD 
+
+1. diskpart
+2. list disk       --- see the number of the disk
+3. select disk <number_disk>
+4. clean
+3. create partition primary
+4. select partition 1
+5. active 
+5. format fs = fat32 quick
+6. assign        --- mount drive usb
