@@ -87,6 +87,15 @@ Create files
 
 echo "Message" > filename
 
+List all process
+
+tasklist
+
+
+kill process
+
+taskkill /F /IM process.exe
+
 List of all Windows 10 keyboard shortcuts
 Reference: https://www.windowscentral.com/best-windows-10-keyboard-shortcuts
 
