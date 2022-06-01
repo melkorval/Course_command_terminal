@@ -82,3 +82,27 @@ How To Format USB/SD Card/Hard Disk Using CMD
 5. active 
 5. format fs = fat32 quick
 6. assign        --- mount drive usb
+
+Create files
+
+echo "Message" > filename
+
+List of all Windows 10 keyboard shortcuts
+Reference: https://www.windowscentral.com/best-windows-10-keyboard-shortcuts
+
+Ctrl + A    Select all content
+Ctrl + C (or Ctrl + Insert) Copy selected items to clipboard
+Ctrl + X    Cut selected items to clipboard
+Ctrl + V (or Shift + Insert)    Paste content from clipboard
+Ctrl + Z    Undo an action, including undelete files (limited)
+Ctrl + Y    Redo an action
+Ctrl + Shift + N    Create new folder on desktop or File Explorer
+Alt + F4    Close active window. (If no active window is present, a shutdown box appears.)
+Ctrl + D (Del)  Delete selected item to the Recycle Bin
+Shift + Delete  Delete the selected item permanently, skipping Recycle Bin.
+F2  Rename selected item.
+Esc Close current task
+Alt + Tab   Switch between open apps
+Windows key + I Open Settings app
+Windows key + E Open File Explorer
+Windows key + A Open Action center
