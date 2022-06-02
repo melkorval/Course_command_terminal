@@ -172,3 +172,26 @@ uname -mp --- return the hardware name and processor architecture name
 env -- pass environment variables
 env  -i NAME="melkor" node app.js  ---- change value of the variable NAME in app.js
 printenv PATH --- print the values of environment variables
+
+Format USB and Disk
+
+lsblk    --- see name of the disk, for this case is sdb1
+sudo umount /dev/sdb1
+sudo mkfs.vfat -F 32 "nameusb" /dev/sdb1
+sudo mkfs.ntfs -L "nameusb" -f /dev/sdb1
+
+
+Fix Error
+
+- Error broker packages
+
+sudo apt --fix-missing update
+sudo apt install -f
+sudo dpkg --configure -a
+sudo apt clean
+sudo apt update
+
+RAR
+
+rar a namefile.rar path_file   --- compress file
+rar x namefile.rar path_file   ----descompress file
