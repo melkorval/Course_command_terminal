@@ -190,8 +190,14 @@ sudo apt install -f
 sudo dpkg --configure -a
 sudo apt clean
 sudo apt update
+sudo apt-get dist-upgrade
 
 RAR
 
 rar a namefile.rar path_file   --- compress file
 rar x namefile.rar path_file   ----descompress file
+
+Mount can't find device in /etc/fstab [solution]
+
+mkdir /mnt/mydrive/
+mount /dev/sdb1 /mnt/mydrive 
