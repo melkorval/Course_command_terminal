@@ -201,3 +201,8 @@ Mount can't find device in /etc/fstab [solution]
 
 mkdir /mnt/mydrive/
 mount /dev/sdb1 /mnt/mydrive 
+
+Bootleable USB
+
+lsblk -- in this case the USB is sdb1
+sudo dd if=path_iso of=/dev/sdb1 bs=4M
