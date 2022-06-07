@@ -81,7 +81,15 @@ How To Format USB/SD Card/Hard Disk Using CMD
 4. select partition 1
 5. active 
 5. format fs = fat32 quick
-6. assign        --- mount drive usb
+6. assign        --- show USB in File Explorer 
+
+
+Remove USB device
+
+diskpart
+list volume
+select volume <number_disk>
+remove all dismount
 
 Create files
 
@@ -95,6 +103,11 @@ tasklist
 kill process
 
 taskkill /F /IM process.exe
+
+Empty Recycle bin 
+
+rmdir /s %systemdrive%\$Recycle.bin
+
 
 List of all Windows 10 keyboard shortcuts
 Reference: https://www.windowscentral.com/best-windows-10-keyboard-shortcuts
