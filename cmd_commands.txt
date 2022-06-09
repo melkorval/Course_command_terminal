@@ -34,9 +34,6 @@ How to Use Command Prompt to Scan and Fix (External) Hard Drive in Windows 10
 chkdsk *: /f /r (replace “*” with the drive letter) -- this case chkdsk E: /f /r
 sfc /scannow
 
-Dismounted usb
-mountvol E:\ /D
-
 Descompress rar
 start WinRAR x filename path_descompress
 
@@ -83,6 +80,13 @@ How To Format USB/SD Card/Hard Disk Using CMD
 5. format fs = fat32 quick
 6. assign        --- show USB in File Explorer 
 
+Mount USB disk
+
+diskpart
+list volume
+select volume <number_disk>
+assign letter = E --- E or any letter
+assign mount = E
 
 Remove USB device
 
