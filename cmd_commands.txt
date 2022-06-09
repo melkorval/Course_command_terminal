@@ -6,8 +6,8 @@ del      rm
 raname   mv
 cd       cd
 
-cipher /e F:/foldername   -- encrypt folder
-cipher /d F:/foldername   --desencrypt folder
+cipher /e path_file  -- encrypt folder
+cipher /d path_file   --desencrypt folder
 ipconfig /all --- information network
 
 how to open usb drive in cmd (run as administrator) 
@@ -107,7 +107,6 @@ taskkill /F /IM process.exe
 Empty Recycle bin 
 
 rmdir /s %systemdrive%\$Recycle.bin
-
 
 List of all Windows 10 keyboard shortcuts
 Reference: https://www.windowscentral.com/best-windows-10-keyboard-shortcuts
