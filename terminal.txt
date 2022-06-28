@@ -206,3 +206,10 @@ Bootleable USB
 
 lsblk -- in this case the USB is sdb1
 sudo dd if=path_iso of=/dev/sdb1 bs=4M
+
+compress and descompress zip
+
+7z x zipfile.zip   --- descompress
+7z l zipfile.zip   ---- list content
+unzip filename.zip -d /path/to/directory --- descompress
+unzip -P PasswOrd filename.zip --- compress with Password
